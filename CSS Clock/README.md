@@ -1,9 +1,18 @@
 # CSS Clock
 Day 2 of the 30-Day Vanilla-JS Challenge!
 
-## Things to remember
-### The data-* attributes is used to store custom data private to the page or application.
-```html
-<div class="key" data-key="76">
+## Important takeaways
+### Functions can be set on intervals
+```javascript
+function clock(){}setInterval(clock, 1000);
 ```
-
+### Obtaining the current date, hour, minute or second
+```javascript
+var hour = new Date().getHours();
+```
+```javascript
+var minute = new Date().getMinutes();
+```
+```javascript
+var second = new Date().getSeconds();
+```
