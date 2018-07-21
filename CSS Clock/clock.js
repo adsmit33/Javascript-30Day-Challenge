@@ -8,7 +8,7 @@ minutes - returns degree of minute hand
 seconds - returns degree of second hand
 
 **/
-function getDegreeFromTime(type)
+function clockDegree(type)
 {
 	var date = new Date();
 	if(type =="hours")
@@ -31,9 +31,9 @@ function clock()
 	var minuteHand = document.querySelector(`div[class="hand hour-hand"]`);
 	var secondHand = document.querySelector(`div[class="hand second-hand"]`);
 
-	var seconds = getDegreeFromTime("seconds");
-	var minutes = getDegreeFromTime("minutes");
-	var hours = getDegreeFromTime("hours");
+	var seconds = clockDegree("seconds");
+	var minutes = clockDegree("minutes");
+	var hours = clockDegree("hours");
 
 	console.log(seconds + " " + minutes+ " " + hours);
 
@@ -41,6 +41,5 @@ function clock()
 	minuteHand.style.transform = "rotate("+minutes+"deg)";
 	secondHand.style.transform = "rotate("+seconds+"deg)";
 
-}
+}setInterval(clock, 1000);
 clock();
-setInterval(clock, 1000);
