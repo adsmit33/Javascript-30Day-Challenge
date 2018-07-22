@@ -21,11 +21,22 @@ img
   filter:blur(var(--blur));
 }
 ```
-### Document element is used to udpate custom properties
+### Document element is used to udpate custom style properties
 ```javascript
 document.documentElement.style.setProperty("--foo", blur.value+"px");
 ```
-### Event listeners are created with addEventListener()
+### Select all inputs within a div
 ```javascript
-blur.addEventListener("input",function(){}();
+var inputs = document.querySelectorAll(".controls input");
  ```
+ ### Add event listeners to all selected inputs, using forEach
+ ```javascript
+ inputs.forEach(input => input.addEventListener("change", changeVariable));
+ ```
+### Obtain a dataset value
+```html
+<input data-sizing="px">
+```
+```javascript
+this.dataset.sizing//retruns px string
+```
