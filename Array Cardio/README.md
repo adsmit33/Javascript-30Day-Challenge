@@ -27,8 +27,8 @@ var totalyear = inventors.reduce((total, inventor) => {
 ### Can utilize mutltiple sort functions at once
 ```javascript
 const namesDE = names
-  .map(name => name.text)
-  .filter(streetname => streetname.includes('de'));
+                   .map(name => name.text)
+                  .filter(streetname => streetname.includes('de'));
 ```
 ### Sum instnaces of array value
 ```javascript
