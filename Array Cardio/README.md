@@ -1,5 +1,5 @@
-# CSS Clock
-Day 2 of the 30-Day Vanilla-JS Challenge!
+# Arrray Cardio - Sorting
+Day 3 of the 30-Day Vanilla-JS Challenge!
 
 ## Important Functions Learned
 ### Array.prototype.filter()
@@ -23,4 +23,22 @@ var sortedBirthday2 = inventors.sort((a,b) => a.year > b.year ? 1 : -1);
 var totalyear = inventors.reduce((total, inventor) => {
   return total + (inventor.passed - inventor.year)
 },0);
+```
+### Can utilize mutltiple sort functions at once
+```javascript
+const namesDE = names
+  .map(name => name.text)
+  .filter(streetname => streetname.includes('de'));
+```
+### Sum instnaces of array value
+```javascript
+const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 
+              'walk', 'car', 'van', 'car', 'truck', 'skateboard'];
+
+const transportation = data.reduce((obj, item) =>
+{
+  if(!obj[item]) obj[item] = 0;
+  obj[item]++;
+  return obj;
+}, {});
 ```
