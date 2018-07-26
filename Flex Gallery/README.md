@@ -11,7 +11,7 @@ this.classList.toggle("open-active");
 panels.forEach(panel => panel.addEventListener("transitionend", toggleActive));
 ```
 ### Determine which transition event completed, and perform an action
-```javacript
+```javascript
 function toggleActive(e) {
   if (e.propertyName.includes("flex")) {
     this.classList.toggle("open-active");
