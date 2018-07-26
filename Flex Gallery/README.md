@@ -18,3 +18,8 @@ function toggleActive(e) {
   }
 }
 ```
+### translateY() defines a 2D translation, moving the element along the Y-axis. 
+```css
+.panel > *:first-child { transform: translateY(-100%); }
+.panel > *:last-child { transform: translateY(100%); }
+```
