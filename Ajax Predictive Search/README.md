@@ -23,7 +23,7 @@ const regex = new RegExp(this.value, 'gi');
 ```javascript
 const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`);
 ```
-### Map() returns an array of string, but can be converted to a single string with .join()
+### Map() returns an array of strings, but can be converted to a single string with .join()
 ```javascript
 const html = filteredList.map(place => {
         return `<li>${this.value}</li>`;
