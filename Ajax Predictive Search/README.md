@@ -2,6 +2,14 @@
 # CSS Variables with Javascript
 Day 6 of the 30-Day Vanilla-JS Challenge!
 
+## Reusable Functions
+### Convert number into number with commas
+```javascript
+function numberWithCommas (x)
+{
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+```
 ## Important takeaways
 ### fetch() json endpoint from web, convert to json, push json data into array.
 ```javascript
@@ -32,12 +40,4 @@ const html = filteredList.map(place => {
 ### Replace inner html of element 
 ```javascript
 document.querySelector('.suggestions').innertHTML = html; 
-```
-## Reusable Functions
-### Convert number into number with commas
-```javascript
-function numberWithCommas (x)
-{
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
 ```
