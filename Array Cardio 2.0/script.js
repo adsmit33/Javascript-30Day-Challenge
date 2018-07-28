@@ -32,9 +32,7 @@ console.log(findId);
 // Array.prototype.findIndex()
 // Find the comment with this ID
 function findIndex(id) {
-  return comments.findIndex(comment => {
-    return comment.id == id;
-  });
+  return comments.findIndex(comment => comment.id == id);
 }
 console.log(findIndex(523423));
 console.log(findIndex(542328));
