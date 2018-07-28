@@ -1,4 +1,4 @@
-# HTML5 - Canvas Brush
+# HTML5 Canvas - Rainbow Brush
 Day 8 of the 30-Day Vanilla-JS Challenge!
 
 ## Important Functions Learned
