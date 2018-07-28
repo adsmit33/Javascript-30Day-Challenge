@@ -1,4 +1,4 @@
-# Arrray Cardio - Sorting
+# Arrray Cardio 2.0 - Sorting
 Day 7 of the 30-Day Vanilla-JS Challenge!
 
 ## Important Functions Learned
