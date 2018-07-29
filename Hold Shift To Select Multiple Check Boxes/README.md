@@ -22,7 +22,7 @@ if(!checkbox.checked) return;
 ```
 If a checkbox is checked without the shiftkey being pressed, or if the first checkbox is checked, 
 then save the checkbox's index and exit function.
-```
+```javascript
 else if(!e.shiftKey || firstBox == -1){
   initialBox = index;
   return;
