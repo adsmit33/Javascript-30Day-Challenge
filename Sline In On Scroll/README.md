@@ -2,11 +2,11 @@
 Day 13 of the 30-Day Vanilla-JS Challenge!
 
 ## Important takeaways
-### Obtain location of half way through an image
+### Determine where the middle of an image is. 
 ```javascript
 const slideIn = (window.scrollY + window.innerHeight) - image.height / 2;
 ```
-### Determine when the bottom of image is at the top of the screen
+### Determine where the bottom of the image is. 
 ```javascript
 const imageBottom = image.offsetTop + image.height;
 ```
